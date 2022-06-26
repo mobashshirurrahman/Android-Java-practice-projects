@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     public void tableFun(int timeTableNumber){
         ArrayList<String> tableList = new ArrayList<String>();
         for(int j=1; j<=10;j++){
-            tableList.add(Integer.toString(j*timeTableNumber));
+            tableList.add(Integer.toString(timeTableNumber) +" "+ "*"+ " "+Integer.toString(j)+" "+"="+" "+ Integer.toString( j*timeTableNumber));
         }
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,tableList);
 
